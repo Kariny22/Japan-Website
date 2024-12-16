@@ -1,0 +1,177 @@
+.left-part{
+    display: flex;
+}
+.left-part a img{
+    width: 100px;
+    filter:grayscale(100) invert(1);
+    left: 0px;
+	
+}
+.left-part h1{
+    color: aliceblue;
+    font-family:Rock Salt Fantasy;
+    font-size: 2.5rem;
+    align-items:center;
+}
+
+.Heading{
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+   
+}
+
+.right-part{
+    display: flex;
+    float: right;
+    text-align: right;
+  
+    padding: 8px;
+    
+}
+.right-part div a{
+    display: flex;
+    color: aliceblue;
+    margin: 50px;
+}
+
+.right-part div a:hover{
+    color: rgb(248, 13, 13);
+}
+body{
+    color: white;
+    background-image: url("https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	 width: 100%;
+	 height:auto%;
+}	
+ .banner-text p{
+	 position:absolute;
+	 top:10%;
+	 left:35%;
+	 transform:(-50%,-50%);
+	 font-size:27px;
+ }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
+
+
+
+
+
+div.gallery {
+  border: 5px solid #ccc;
+  transition:.3s;
+}
+
+div.gallery:hover {
+	border: 2px solid #ccc;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+	font-size:25px;
+	font-family:"Times New Roman";
+}
+
+*{
+  box-sizing: border-box;
+ 
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 33.333333%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
